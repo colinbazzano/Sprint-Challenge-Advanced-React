@@ -9,9 +9,9 @@ const Navbar = () => {
     };
     return (
         <nav className="navbar">
-            <h1>Meet The Players!</h1>
+            <h1 data-testid="navbar-header">Meet The Players!</h1>
             <div className="dark-mode__toggle">
-            <button onClick={toggleDark} className={darkMode ? 'toggle toggled' : 'toggle'}>Change Light Mode</button>
+            <button data-testid="darkModeButton" onClick={toggleDark} className={darkMode ? 'toggle toggled' : 'toggle'}>Change Light Mode</button>
             </div>
         </nav>
     );

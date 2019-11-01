@@ -22,7 +22,7 @@ class Display extends React.Component {
             return (
                 <div className='player-container' key={player.id}>
                     <h1>{player.name}</h1>
-                    <p>Country: {player.country}</p>
+                    <p className="player-country" >Country: {player.country}</p>
                     <p>Searches: {player.searches}</p>
                 </div>
             );
@@ -33,7 +33,7 @@ class Display extends React.Component {
         return (
             <>
                 {/* <button onClick={this.fetchPlayers()}>Meet the Players!</button> */}
-                <div>{this.fetchPlayers()}</div>
+                <div data-testid='players' className='players' >{this.fetchPlayers()}</div>
             </>
         );
     }
